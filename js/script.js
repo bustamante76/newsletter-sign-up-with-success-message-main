@@ -4,6 +4,8 @@ let spanError = document.querySelector(".span");
 let cardSuccess = document.querySelector(".card-success");
 let card = document.querySelector(".card");
 
+console.log(cardSuccess);
+
 formButton.addEventListener("click", (e) => {
     e.preventDefault();
     console.log(formEmail.value)
@@ -15,6 +17,7 @@ formButton.addEventListener("click", (e) => {
         card.style.display = "flex";
     } else {
         if (formEmail.validity.valid) {
+            cardSuccess.querySelector(".email-dynamic").innerText = formEmail.value;
             formEmail.classList.remove("email--error");
             formEmail.placeholder = "email@company.com";
             spanError.style.display = "none";
@@ -32,4 +35,4 @@ formButton.addEventListener("click", (e) => {
 cardSuccess.addEventListener("click", () => {
     cardSuccess.style.display = "none";
     card.style.display = "flex";
- });
+});
