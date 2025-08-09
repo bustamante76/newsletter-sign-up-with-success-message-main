@@ -191,6 +191,12 @@ button:focus-visible {
   line-height: 1.6;
 }
 
+.email-dynamic {
+  font-weight: 700;
+  font-size: 0.66rem;
+  color: var(--color-Blue-800);
+}
+
 @media (min-width: 780px) and (max-width: 1199px) {
   body {
     padding: 40px 0;
@@ -213,7 +219,7 @@ button:focus-visible {
     width: 100%;
     aspect-ratio: 4/2.6;
     background: url("../assets/images/illustration-sign-up-tablet.svg")
-    no-repeat top;
+      no-repeat top;
     background-size: 100%;
   }
 }
